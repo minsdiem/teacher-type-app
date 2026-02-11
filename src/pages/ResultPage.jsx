@@ -7,23 +7,23 @@ import { tools } from '../data/tools';
 const PageContainer = styled.div`
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
-  padding-bottom: 6rem;
+  padding: 1.5rem;
+  padding-bottom: 4rem;
 `;
 
 const HeaderSection = styled.div`
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 `;
 
 const TypeTitle = styled.h1`
-  font-size: 2rem;
-  color: #1e293b; /* Dark slate 800 - High contrast */
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 0.3rem;
   font-weight: 800;
   
   @media (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 `;
 
@@ -31,44 +31,44 @@ const TypeCode = styled.div`
   display: inline-block;
   background: var(--primary-color);
   color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 50px; /* Pill shape */
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
   font-weight: 800;
-  margin-bottom: 1rem;
-  font-size: 1.5rem; /* Larger for emphasis */
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
   box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
 `;
 
 const Keywords = styled.div`
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap;
 `;
 
 const KeywordBadge = styled.span`
   background: #f1f5f9;
   color: #475569;
-  padding: 0.4rem 0.8rem;
+  padding: 0.3rem 0.7rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 `;
 
 const CodeExplanationSection = styled.div`
   background: white;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 `;
 
 const CodeGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
 
   @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
@@ -81,31 +81,32 @@ const CodeGrid = styled.div`
 
 const CodeCard = styled.div`
   background: #F8FAFC;
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 0.5rem;
-  border-left: 4px solid var(--primary-color);
+  border-left: 3px solid var(--primary-color);
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   
   h4 {
     color: var(--primary-color);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.2rem;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
   p {
-    font-size: 0.95rem;
-    color: #334155; /* Darker slate for better contrast */
-    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #334155;
+    line-height: 1.4;
     font-weight: 500;
+    margin: 0;
   }
 `;
 
 const ContentGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -114,43 +115,44 @@ const ContentGrid = styled.div`
 
 const Card = styled.div`
   background: white;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   height: 100%;
 
   @media (min-width: 768px) {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
     border-bottom: 2px solid #f1f5f9;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
   }
 
   ul {
     list-style-position: inside;
     color: #475569;
-    line-height: 1.6;
-    padding-left: 0.5rem;
+    line-height: 1.5;
+    padding-left: 0.3rem;
   }
   
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
   }
 `;
 
 const RecommendationSection = styled.div`
-  margin-top: 4rem;
+  margin-top: 3rem;
 `;
 
 const ToolGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   
   @media (min-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
@@ -167,7 +169,7 @@ const ToolCard = styled.a`
   background: white;
   border: 1px solid #e2e8f0;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   text-decoration: none;
   color: inherit;
@@ -180,38 +182,38 @@ const ToolCard = styled.a`
   }
 
   h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #1e293b;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   span.category {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     background: #eff6ff;
     color: var(--primary-color);
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
     white-space: nowrap;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #64748b;
     margin-bottom: auto;
-    line-height: 1.5;
-    padding-bottom: 1rem;
+    line-height: 1.4;
+    padding-bottom: 0.8rem;
   }
 
   div.meta {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #94a3b8;
     display: flex;
     gap: 0.5rem;
-    margin-top: 0.5rem;
-    padding-top: 0.5rem;
+    margin-top: 0.4rem;
+    padding-top: 0.4rem;
     border-top: 1px solid #f1f5f9;
   }
 `;
@@ -219,8 +221,8 @@ const ToolCard = styled.a`
 const ActionButtons = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-top: 4rem;
+  gap: 0.8rem;
+  margin-top: 3rem;
   
   @media (min-width: 640px) {
     flex-direction: row;
@@ -229,11 +231,12 @@ const ActionButtons = styled.div`
 `;
 
 const Button = styled(Link)`
-  padding: 1rem 2rem;
-  border-radius: 12px;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
   font-weight: 600;
   text-align: center;
   transition: opacity 0.2s;
+  font-size: 1rem;
   
   &:hover {
     opacity: 0.9;
@@ -341,7 +344,7 @@ function ResultPage() {
   return (
     <PageContainer>
       <HeaderSection>
-        <div style={{ marginBottom: '0.5rem', color: '#64748b', fontSize: '0.9rem' }}>나의 에듀테크 유형은?</div>
+        <div style={{ marginBottom: '0.5rem', color: '#64748b', fontSize: '0.9rem' }}>나의 TPEI 은?</div>
         <TypeCode>{typeData.code}</TypeCode>
         <TypeTitle>{typeData.name}</TypeTitle>
         <Keywords>
