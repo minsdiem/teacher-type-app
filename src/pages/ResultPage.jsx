@@ -344,7 +344,7 @@ function ResultPage() {
   return (
     <PageContainer>
       <HeaderSection>
-        <div style={{ marginBottom: '0.5rem', color: '#64748b', fontSize: '0.9rem' }}>나의 TPEI 은?</div>
+        <div style={{ marginBottom: '0.5rem', color: '#64748b', fontSize: '0.9rem' }}>나의 TPEC 은?</div>
         <TypeCode>{typeData.code}</TypeCode>
         <TypeTitle>{typeData.name}</TypeTitle>
         <Keywords>

@@ -13,7 +13,7 @@ export const teacherTypes = {
             "학습 분석 대시보드 활용",
             "체계적인 디지털 포트폴리오 관리"
         ],
-        recommendedTools: ["Notion", "ChatGPT", "클래스카드"]
+        recommendedTools: ["Notion", "ChatGPT", "클래스카드", "Quizlet", "Google Forms", "Loom"]
     },
     TEIF: {
         code: "TEIF",
@@ -29,7 +29,7 @@ export const teacherTypes = {
             "1:1 디지털 코칭",
             "상황에 맞는 도구 선택"
         ],
-        recommendedTools: ["Obsidian", "Claude", "Suno AI"]
+        recommendedTools: ["Obsidian", "Claude", "Suno AI", "DALL-E 3 (OpenAI)", "Perplexity", "Flip (Flipgrid)"]
     },
     TEGS: {
         code: "TEGS",
@@ -45,7 +45,7 @@ export const teacherTypes = {
             "그룹 프로젝트 온라인 관리",
             "학급 전체 학습 분석"
         ],
-        recommendedTools: ["Google Workspace", "Gemini", "Kahoot"]
+        recommendedTools: ["Google Workspace", "Gemini", "Kahoot", "Slack", "Miro", "Padlet"]
     },
     TEGF: {
         code: "TEGF",
@@ -61,7 +61,7 @@ export const teacherTypes = {
             "학생 주도 디지털 협업",
             "즉흥적 활동 설계"
         ],
-        recommendedTools: ["Notion", "Canva", "ChatGPT"]
+        recommendedTools: ["Notion", "Canva", "ChatGPT", "Gamma", "ZEP 퀴즈", "Discord"]
     },
     TCIS: {
         code: "TCIS",
@@ -77,7 +77,7 @@ export const teacherTypes = {
             "장기적 학생 성장 기록",
             "정확한 개별 피드백"
         ],
-        recommendedTools: ["Notion", "ChatGPT", "Google Forms"]
+        recommendedTools: ["Notion", "ChatGPT", "Google Forms", "Quizizz", "OneNote", "Evernote"]
     },
     TCIF: {
         code: "TCIF",
@@ -93,7 +93,7 @@ export const teacherTypes = {
             "꾸준한 개별 관찰",
             "안정적 학습 환경"
         ],
-        recommendedTools: ["Google Docs", "ChatGPT", "Google Forms"]
+        recommendedTools: ["Google Docs", "ChatGPT", "Google Forms", "Wakelet", "심스페이스 마음일기", "클래스팅"]
     },
     TCGS: {
         code: "TCGS",
@@ -109,7 +109,7 @@ export const teacherTypes = {
             "명확한 평가 기준",
             "체계적 그룹 관리"
         ],
-        recommendedTools: ["Google Workspace", "Google Forms", "Canva"]
+        recommendedTools: ["Google Workspace", "Google Forms", "Canva", "Padlet", "네이버 밴드", "리로스쿨"]
     },
     TCGF: {
         code: "TCGF",
@@ -125,7 +125,7 @@ export const teacherTypes = {
             "부담 없는 협업 환경",
             "자연스러운 학습 흐름"
         ],
-        recommendedTools: ["Google Docs", "Canva", "Padlet"]
+        recommendedTools: ["Google Docs", "Canva", "Padlet", "위두랑", "ClassDojo", "멘티미터 (Mentimeter)"]
     },
     PEIS: {
         code: "PEIS",
@@ -141,7 +141,7 @@ export const teacherTypes = {
             "창의적 산출물 제작",
             "체계적 프로젝트 관리"
         ],
-        recommendedTools: ["Notion", "ChatGPT", "Canva"]
+        recommendedTools: ["Notion", "ChatGPT", "Canva", "NotebookLM", "Replit", "Google Apps Script"]
     },
     PEIF: {
         code: "PEIF",
@@ -157,7 +157,7 @@ export const teacherTypes = {
             "학생별 독특한 결과물",
             "즉흥적 영감 포착"
         ],
-        recommendedTools: ["Obsidian", "Claude", "Suno AI"]
+        recommendedTools: ["Obsidian", "Claude", "Suno AI", "Midjourney", "자작자작", "Antigravity"]
     },
     PEGS: {
         code: "PEGS",
@@ -173,7 +173,7 @@ export const teacherTypes = {
             "그룹별 역할과 일정 관리",
             "집단 창의성 발현"
         ],
-        recommendedTools: ["Notion", "ChatGPT", "Canva"]
+        recommendedTools: ["Notion", "ChatGPT", "Canva", "Miro", "Slack", "Gamma"]
     },
     PEGF: {
         code: "PEGF",
@@ -189,7 +189,7 @@ export const teacherTypes = {
             "학생 주도성 최대화",
             "즉각적 아이디어 실현"
         ],
-        recommendedTools: ["다했니? 다해요!", "Canva", "ChatGPT"]
+        recommendedTools: ["다했니? 다해요!", "Canva", "ChatGPT", "Prezi", "Blooket", "YouTube"]
     },
     PCIS: {
         code: "PCIS",
@@ -205,7 +205,7 @@ export const teacherTypes = {
             "안정적 프로젝트 진행",
             "명확한 평가 루브릭"
         ],
-        recommendedTools: ["Google Docs", "ChatGPT", "Google Forms"]
+        recommendedTools: ["Google Docs", "ChatGPT", "Google Forms", "Notion", "Evernote", "Google Sheets"]
     },
     PCIF: {
         code: "PCIF",
@@ -221,7 +221,7 @@ export const teacherTypes = {
             "부담 없는 탐구 과정",
             "개별 속도 존중"
         ],
-        recommendedTools: ["Google Docs", "Canva", "ChatGPT"]
+        recommendedTools: ["Google Docs", "Canva", "ChatGPT", "Wakelet", "Pinterest", "YouTube"]
     },
     PCGS: {
         code: "PCGS",
@@ -237,7 +237,7 @@ export const teacherTypes = {
             "공정한 모둠 평가",
             "안정적 협업 환경"
         ],
-        recommendedTools: ["Google Workspace", "Google Forms", "Canva"]
+        recommendedTools: ["Google Workspace", "Google Forms", "Canva", "Padlet", "Zoom", "Google Slides"]
     },
     PCGF: {
         code: "PCGF",
@@ -253,7 +253,7 @@ export const teacherTypes = {
             "편안한 협업 분위기",
             "자연스러운 배움 촉진"
         ],
-        recommendedTools: ["다했니? 다해요!", "Canva", "Padlet"]
+        recommendedTools: ["다했니? 다해요!", "Canva", "Padlet", "Google Slides", "ClassDojo", "Flip (Flipgrid)"]
     }
 };
 
