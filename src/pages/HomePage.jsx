@@ -346,7 +346,6 @@ function HomePage() {
             <li>맞춤 도구 추천</li>
           </CheckList>
         </SummaryBox>
-        <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>이미 1,200명 이상의 선생님이 참여하셨어요!</p>
       </SummarySection>
     </Container>
   );
