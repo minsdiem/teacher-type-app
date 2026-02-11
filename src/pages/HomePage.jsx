@@ -2,113 +2,321 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const HomeContainer = styled.div`
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+`;
+
+const HeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
   text-align: center;
-  padding: 2rem;
+  padding: 5rem 2rem 4rem;
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
 `;
 
+const Badge = styled.div`
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--primary-color);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  display: inline-block;
+  backdrop-filter: blur(4px);
+`;
+
 const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: #1e293b;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-
-  span {
-    color: var(--primary-color);
-  }
-
-  @media (max-width: 768px) {
-    font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  word-break: keep-all;
+  
+  @media (min-width: 768px) {
+    font-size: 3.5rem;
   }
 `;
 
-const Subtitle = styled.p`
-  font-size: 1.25rem;
+const Description = styled.div`
+  font-size: 1.1rem;
   color: #475569;
-  margin-bottom: 3rem;
   max-width: 600px;
-  line-height: 1.6;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  word-break: keep-all;
+
+  p {
+    margin-bottom: 1rem;
+  }
+`;
+
+const Section = styled.section`
+  padding: 4rem 2rem;
+  width: 100%;
+  text-align: center;
+  background-color: ${props => props.bg || 'transparent'};
+`;
+
+const ContentWrapper = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+`;
+
+const SectionTitle = styled.h2`
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 2.5rem;
+  display: inline-block;
+  position: relative;
+  letter-spacing: -0.5px;
+  
+  &:after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0.8rem auto 0;
+    border-radius: 2px;
+    opacity: 0.7;
+  }
+`;
+
+const PreviewGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+  
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+`;
+
+const TypeCard = styled.div`
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  h4 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  
+  p {
+    color: #64748b;
+    font-weight: 600;
+    margin: 0;
+    font-size: 1rem;
+  }
+`;
+
+const MoreTypes = styled.div`
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+`;
+
+const AxesList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+`;
+
+const AxisItem = styled.div`
+  background: white;
+  padding: 1.2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  border: 1px solid #f8fafc;
+  
+  strong {
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-right: 1.5rem;
+    min-width: 70px;
+  }
+  
+  div.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    span.title {
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 0.2rem;
+    }
+    
+    span.desc {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+  }
+`;
+
+const SummaryBox = styled.div`
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  max-width: 450px;
+  margin: 0 auto 3rem;
+  text-align: left;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+`;
+
+const CheckList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  li {
+    margin-bottom: 1rem;
+    color: #475569;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    &:before {
+      content: '✓';
+      color: var(--primary-color);
+      font-weight: 900;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 const StartButton = styled(Link)`
   display: inline-block;
   background-color: var(--primary-color);
   color: white;
-  padding: 1rem 2.5rem;
+  padding: 1.2rem 3.5rem;
   border-radius: 50px;
-  font-size: 1.25rem;
-  font-weight: 600;
-  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2), 0 2px 4px -1px rgba(79, 70, 229, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-
+  font-size: 1.4rem;
+  font-weight: 800;
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  text-decoration: none;
+  
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.4);
+    background-color: #4338ca;
   }
 `;
 
-const FeatureGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 4rem;
-  width: 100%;
-  max-width: 1000px;
-`;
-
-const FeatureCard = styled.div`
-  background: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  text-align: left;
-
-  h3 {
-    font-size: 1.25rem;
-    color: #1e293b;
-    margin-bottom: 0.5rem;
-  }
-
-  p {
-    color: #64748b;
-  }
-`;
+const AxisRow = ({ code, title, desc }) => (
+  <AxisItem>
+    <strong>{code}</strong>
+    <div className="info">
+      <span className="title">{title}</span>
+      <span className="desc">{desc}</span>
+    </div>
+  </AxisItem>
+);
 
 function HomePage() {
-    return (
-        <HomeContainer>
-            <Title>
-                나만의 <span>교육 스타일</span>을<br />찾아보세요
-            </Title>
-            <Subtitle>
-                간단한 설문을 통해 16가지 교사 유형 중 나에게 맞는 유형을 진단하고,
-                수업과 업무 효율을 높여줄 최적의 디지털 도구를 추천해 드립니다.
-            </Subtitle>
-            <StartButton to="/survey">지금 진단하기</StartButton>
+  return (
+    <Container>
+      <HeroSection>
+        <Badge>🎯 티처타입 (TeacherType)</Badge>
+        <Title>나만의 교육 스타일을<br />찾아보세요</Title>
+        <Description>
+          <p>
+            간단한 16문항으로 당신의 TPEI 코드를 발견하고,<br />
+            16가지 티처타입 중 나에게 딱 맞는 유형을 진단받으세요.
+          </p>
+          <p>
+            수업과 업무 효율을 높여줄<br />
+            최적의 AI 디지털 도구를 추천해 드립니다.
+          </p>
+        </Description>
+      </HeroSection>
 
-            <FeatureGrid>
-                <FeatureCard>
-                    <h3>🔍 정밀한 진단</h3>
-                    <p>수업 스타일, 테크 친화도, 상호작용, 업무 관리 4가지 축으로 분석합니다.</p>
-                </FeatureCard>
-                <FeatureCard>
-                    <h3>🤖 맞춤형 도구 추천</h3>
-                    <p>내 성향에 딱 맞는 AI 도구와 활용법을 제안합니다.</p>
-                </FeatureCard>
-                <FeatureCard>
-                    <h3>🚀 실전 적용 가이드</h3>
-                    <p>바로 교실에서 사용할 수 있는 실질적인 팁을 제공합니다.</p>
-                </FeatureCard>
-            </FeatureGrid>
-        </HomeContainer>
-    );
+      <Section>
+        <ContentWrapper>
+          <SectionTitle>[ 16가지 티처타입 미리보기 ]</SectionTitle>
+          <PreviewGrid>
+            <TypeCard>
+              <h4>💼 TEIS</h4>
+              <p>디지털 마에스트로</p>
+            </TypeCard>
+            <TypeCard>
+              <h4>🎨 PEIF</h4>
+              <p>창의적 실험가</p>
+            </TypeCard>
+            <TypeCard>
+              <h4>📚 TCGS</h4>
+              <p>클래식 오거나이저</p>
+            </TypeCard>
+          </PreviewGrid>
+          <MoreTypes>... (더 많은 유형이 기다리고 있어요)</MoreTypes>
+        </ContentWrapper>
+      </Section>
+
+      <Section bg="#f8fafc">
+        <ContentWrapper>
+          <SectionTitle>4가지 축으로 당신을 분석합니다</SectionTitle>
+          <AxesList>
+            <AxisRow code="T vs P" title="수업 스타일" desc="강의형 ↔ 프로젝트형" />
+            <AxisRow code="E vs C" title="테크 친화도" desc="실험적 ↔ 안정적" />
+            <AxisRow code="I vs G" title="상호작용" desc="개별 ↔ 협업" />
+            <AxisRow code="S vs F" title="업무 관리" desc="체계적 ↔ 유연" />
+          </AxesList>
+        </ContentWrapper>
+      </Section>
+
+      <Section>
+        <ContentWrapper>
+          <SectionTitle>[ 3분이면 충분해요 ]</SectionTitle>
+          <SummaryBox>
+            <CheckList>
+              <li>소요시간 3-5분</li>
+              <li>총 16문항</li>
+              <li>즉시 결과 확인</li>
+              <li>맞춤 도구 추천</li>
+            </CheckList>
+          </SummaryBox>
+          <StartButton to="/survey">🚀 시작하기</StartButton>
+        </ContentWrapper>
+      </Section>
+    </Container>
+  );
 }
 
 export default HomePage;

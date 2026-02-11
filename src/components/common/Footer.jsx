@@ -14,11 +14,11 @@ const Copyright = styled.p`
 `;
 
 function Footer() {
-    return (
-        <FooterContainer>
-            <Copyright>&copy; {new Date().getFullYear()} 교사 유형 진단 & 도구 추천 서비스. All rights reserved.</Copyright>
-        </FooterContainer>
-    );
+  return (
+    <FooterContainer>
+      <Copyright>&copy; {new Date().getFullYear()} 민쌤. All rights reserved.</Copyright>
+    </FooterContainer>
+  );
 }
 
 export default Footer;
