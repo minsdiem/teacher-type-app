@@ -29,7 +29,7 @@ export const teacherTypes = {
             "1:1 디지털 코칭",
             "상황에 맞는 도구 선택"
         ],
-        recommendedTools: ["Obsidian", "Claude", "Suno AI", "DALL-E 3 (OpenAI)", "Perplexity", "Flip (Flipgrid)"]
+        recommendedTools: ["Obsidian", "Claude", "Suno AI", "DALL-E 3 (OpenAI)", "Perplexity", "Flip"]
     },
     TEGS: {
         code: "TEGS",
@@ -253,7 +253,7 @@ export const teacherTypes = {
             "편안한 협업 분위기",
             "자연스러운 배움 촉진"
         ],
-        recommendedTools: ["다했니?", "Canva", "Padlet", "Google Slides", "ClassDojo", "Flip (Flipgrid)"]
+        recommendedTools: ["다했니?", "Canva", "Padlet", "Google Slides", "ClassDojo", "Flip"]
     }
 };
 

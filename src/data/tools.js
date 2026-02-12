@@ -736,5 +736,41 @@ export const tools = [
         "description": "Office 365 기반의 강력한 학급 관리 및 협업 메신저",
         "pricing": "Freemium",
         "difficulty": "Mid"
+    },
+    {
+        "id": 83,
+        "name": "Google Workspace",
+        "url": "https://workspace.google.com",
+        "category": "협업/소통",
+        "description": "클라우드 기반의 협업 및 생산성 도구 모음 (Docs, Sheets, Slides 등)",
+        "pricing": "Freemium",
+        "difficulty": "Mid"
+    },
+    {
+        "id": 84,
+        "name": "Pinterest",
+        "url": "https://www.pinterest.com",
+        "category": "메모/관리",
+        "description": "다양한 아이디어와 자료를 이미지로 수집하고 관리하는 플랫폼",
+        "pricing": "Free",
+        "difficulty": "Low"
+    },
+    {
+        "id": 85,
+        "name": "YouTube",
+        "url": "https://www.youtube.com",
+        "category": "창작/소통",
+        "description": "전 세계의 다양한 교육 영상 자료를 활용할 수 있는 플랫폼",
+        "pricing": "Freemium",
+        "difficulty": "Low"
+    },
+    {
+        "id": 86,
+        "name": "Antigravity",
+        "url": "#",
+        "category": "기타",
+        "description": "당신의 코딩을 도와주는 강력한 AI 에이전트",
+        "pricing": "Free",
+        "difficulty": "High"
     }
 ];
