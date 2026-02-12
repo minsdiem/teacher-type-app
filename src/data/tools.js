@@ -271,7 +271,7 @@ export const tools = [
     },
     {
         "id": 31,
-        "name": "다했니? 다해요!",
+        "name": "다했니?",
         "url": "https://dahandin.com",
         "category": "메모/관리",
         "description": "학급 과제 제출과 체크리스트 관리에 특화된 도구",

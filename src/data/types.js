@@ -189,7 +189,7 @@ export const teacherTypes = {
             "학생 주도성 최대화",
             "즉각적 아이디어 실현"
         ],
-        recommendedTools: ["다했니? 다해요!", "Canva", "ChatGPT", "Prezi", "Blooket", "YouTube"]
+        recommendedTools: ["다했니?", "Canva", "ChatGPT", "Prezi", "Blooket", "YouTube"]
     },
     PCIS: {
         code: "PCIS",
@@ -253,23 +253,23 @@ export const teacherTypes = {
             "편안한 협업 분위기",
             "자연스러운 배움 촉진"
         ],
-        recommendedTools: ["다했니? 다해요!", "Canva", "Padlet", "Google Slides", "ClassDojo", "Flip (Flipgrid)"]
+        recommendedTools: ["다했니?", "Canva", "Padlet", "Google Slides", "ClassDojo", "Flip (Flipgrid)"]
     }
 };
 
 export const typeCodeDescriptions = {
     T: {
-        title: "Teaching (수업)",
+        title: "Teaching (강의형)",
         desc: "지식을 체계적으로 전달하는 것을 선호합니다.",
         opposing: "P"
     },
     P: {
-        title: "Project (프로젝트)",
+        title: "Project (프로젝트형)",
         desc: "학생 주도의 탐구와 프로젝트 활동을 선호합니다.",
         opposing: "T"
     },
     E: {
-        title: "Early Adopter (얼리어답터)",
+        title: "Early Adopter (얼리어답터형)",
         desc: "최신 기술과 새로운 도구 도입에 적극적입니다.",
         opposing: "C"
     },
@@ -279,22 +279,22 @@ export const typeCodeDescriptions = {
         opposing: "E"
     },
     I: {
-        title: "Individual (개별화)",
+        title: "Individual (개별화형)",
         desc: "학생 개개인의 특성에 맞춘 지도를 중요시합니다.",
         opposing: "G"
     },
     G: {
-        title: "Group (협업)",
+        title: "Group (협업형)",
         desc: "학생들 간의 상호작용과 협력 학습을 중시합니다.",
         opposing: "I"
     },
     S: {
-        title: "Systematic (체계형)",
+        title: "Systematic (체계적)",
         desc: "미리 계획된 구조와 체계적인 관리를 선호합니다.",
         opposing: "F"
     },
     F: {
-        title: "Flexible (유연형)",
+        title: "Flexible (유연)",
         desc: "상황에 따른 유연한 대처와 즉흥성을 즐깁니다.",
         opposing: "S"
     }

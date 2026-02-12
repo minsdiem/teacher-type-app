@@ -291,7 +291,7 @@ function HomePage() {
     <Container>
       <HeroSection>
         <Badge>🎯 티처타입</Badge>
-        <Title>나만의 교육 스타일을<br />찾아보세요</Title>
+        <Title>나만의 교육스타일과 디지털도구를<br />찾아보세요</Title>
         <Description>
           <p>
             간단한 16문항으로 당신의 TPEC 코드를 발견하고,<br />
@@ -306,6 +306,16 @@ function HomePage() {
       </HeroSection>
 
       <MainContent>
+        <SectionBox>
+          <SectionTitle>[ 4가지 축 분석 ]</SectionTitle>
+          <AxesList>
+            <AxisRow code="T vs P" title="수업 스타일" desc="강의형 ↔ 프로젝트형" />
+            <AxisRow code="E vs C" title="테크 친화도" desc="얼리어답터형 ↔ 신중형" />
+            <AxisRow code="I vs G" title="상호작용" desc="개별화형 ↔ 협업형" />
+            <AxisRow code="S vs F" title="업무 관리" desc="체계적 ↔ 유연" />
+          </AxesList>
+        </SectionBox>
+
         <SectionBox>
           <SectionTitle>[ 16가지 티처타입 미리보기 ]</SectionTitle>
           <PreviewGrid>
@@ -325,15 +335,6 @@ function HomePage() {
           <MoreTypes>... (더 많은 유형이 기다리고 있어요)</MoreTypes>
         </SectionBox>
 
-        <SectionBox>
-          <SectionTitle>[ 4가지 축 분석 ]</SectionTitle>
-          <AxesList>
-            <AxisRow code="T vs P" title="수업 스타일" desc="강의형 ↔ 프로젝트형" />
-            <AxisRow code="E vs C" title="테크 친화도" desc="얼리어답터형 ↔ 신중형" />
-            <AxisRow code="I vs G" title="상호작용" desc="개별화형 ↔ 협업형" />
-            <AxisRow code="S vs F" title="업무 관리" desc="체계적 ↔ 유연" />
-          </AxesList>
-        </SectionBox>
       </MainContent>
 
       <SummarySection>
