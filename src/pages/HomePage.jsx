@@ -294,7 +294,7 @@ function HomePage() {
         <Title>나만의 교육 스타일을<br />찾아보세요</Title>
         <Description>
           <p>
-            간단한 16문항으로 당신의 TPEI 코드를 발견하고,<br />
+            간단한 16문항으로 당신의 TPEC 코드를 발견하고,<br />
             16가지 티처타입 중 나에게 딱 맞는 유형을 진단받으세요.
           </p>
           <p>
@@ -329,8 +329,8 @@ function HomePage() {
           <SectionTitle>[ 4가지 축 분석 ]</SectionTitle>
           <AxesList>
             <AxisRow code="T vs P" title="수업 스타일" desc="강의형 ↔ 프로젝트형" />
-            <AxisRow code="E vs C" title="테크 친화도" desc="실험적 ↔ 안정적" />
-            <AxisRow code="I vs G" title="상호작용" desc="개별 ↔ 협업" />
+            <AxisRow code="E vs C" title="테크 친화도" desc="얼리어답터형 ↔ 신중형" />
+            <AxisRow code="I vs G" title="상호작용" desc="개별화형 ↔ 협업형" />
             <AxisRow code="S vs F" title="업무 관리" desc="체계적 ↔ 유연" />
           </AxesList>
         </SectionBox>
