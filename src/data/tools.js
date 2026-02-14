@@ -442,15 +442,6 @@ export const tools = [
     },
     {
         "id": 50,
-        "name": "Flip",
-        "url": "https://info.flip.com",
-        "category": "기타",
-        "description": "짧은 동영상으로 학생들의 목소리를 담는 플랫폼 (MS 통합)",
-        "pricing": "Free",
-        "difficulty": "Low"
-    },
-    {
-        "id": 51,
         "name": "Nearpod",
         "url": "https://nearpod.com",
         "category": "기타",
@@ -459,7 +450,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 52,
+        "id": 51,
         "name": "투닝 (Tooning)",
         "url": "https://tooning.io",
         "category": "창작",
@@ -468,7 +459,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 53,
+        "id": 52,
         "name": "심스페이스 마음일기",
         "url": "https://www.sim-space.com",
         "category": "기타",
@@ -477,7 +468,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 54,
+        "id": 53,
         "name": "미리캔버스",
         "url": "https://www.miricanvas.com",
         "category": "창작",
@@ -486,7 +477,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 55,
+        "id": 54,
         "name": "브루 (Vrew)",
         "url": "https://vrew.voyagerx.com",
         "category": "창작",
@@ -495,7 +486,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 56,
+        "id": 55,
         "name": "클로바노트",
         "url": "https://clovanote.naver.com",
         "category": "메모/관리",
@@ -504,7 +495,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 57,
+        "id": 56,
         "name": "아이코그램스 (Icograms)",
         "url": "https://icograms.com",
         "category": "창작",
@@ -513,7 +504,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 58,
+        "id": 57,
         "name": "아트스텝스 (Artsteps)",
         "url": "https://www.artsteps.com",
         "category": "창작",
@@ -522,7 +513,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 59,
+        "id": 58,
         "name": "북 크리에이터 (Book Creator)",
         "url": "https://bookcreator.com",
         "category": "창작",
@@ -531,7 +522,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 60,
+        "id": 59,
         "name": "아이오래드 (iorad)",
         "url": "https://www.iorad.com",
         "category": "기타",
@@ -540,7 +531,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 61,
+        "id": 60,
         "name": "탱고 (Tango)",
         "url": "https://www.tango.us",
         "category": "기타",
@@ -549,7 +540,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 62,
+        "id": 61,
         "name": "구글 사이트 도구",
         "url": "https://sites.google.com",
         "category": "창작",
@@ -558,7 +549,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 63,
+        "id": 62,
         "name": "카미 (Kami)",
         "url": "https://www.kamiapp.com",
         "category": "기타",
@@ -567,7 +558,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 64,
+        "id": 63,
         "name": "알로 (Allo)",
         "url": "https://allo.io",
         "category": "협업/소통",
@@ -576,7 +567,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 65,
+        "id": 64,
         "name": "슬라이도 (Slido)",
         "url": "https://www.slido.com",
         "category": "퀴즈/평가",
@@ -585,7 +576,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 66,
+        "id": 65,
         "name": "플리피티 (Flippity)",
         "url": "https://www.flippity.net",
         "category": "퀴즈/평가",
@@ -594,7 +585,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 67,
+        "id": 66,
         "name": "티처메이드 (TeacherMade)",
         "url": "https://teachermade.com",
         "category": "퀴즈/평가",
@@ -603,7 +594,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 68,
+        "id": 67,
         "name": "보카루 (Vocaroo)",
         "url": "https://vocaroo.com",
         "category": "기타",
@@ -612,7 +603,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 69,
+        "id": 68,
         "name": "에드퍼즐 (Edpuzzle)",
         "url": "https://edpuzzle.com",
         "category": "기타",
@@ -621,7 +612,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 70,
+        "id": 69,
         "name": "웨일 스페이스",
         "url": "https://whalespace.edu",
         "category": "학급관리",
@@ -630,7 +621,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 71,
+        "id": 70,
         "name": "클래스123 (Class123)",
         "url": "https://class123.ac",
         "category": "학급관리",
@@ -639,7 +630,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 72,
+        "id": 71,
         "name": "워드월 (Wordwall)",
         "url": "https://wordwall.net",
         "category": "퀴즈/평가",
@@ -648,7 +639,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 73,
+        "id": 72,
         "name": "라이브워크시트",
         "url": "https://www.liveworksheets.com",
         "category": "퀴즈/평가",
@@ -657,7 +648,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 74,
+        "id": 73,
         "name": "코스페이스 에듀 (CoSpaces Edu)",
         "url": "https://cospaces.io/edu",
         "category": "코딩",
@@ -666,7 +657,7 @@ export const tools = [
         "difficulty": "High"
     },
     {
-        "id": 75,
+        "id": 74,
         "name": "제니얼리 (Genially)",
         "url": "https://genially.com",
         "category": "프레젠테이션",
@@ -675,7 +666,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 76,
+        "id": 75,
         "name": "쏘크라티브 (Socrative)",
         "url": "https://socrative.com",
         "category": "퀴즈/평가",
@@ -684,7 +675,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 77,
+        "id": 76,
         "name": "김킷 (Gimkit)",
         "url": "https://www.gimkit.com",
         "category": "퀴즈/평가",
@@ -693,7 +684,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 78,
+        "id": 77,
         "name": "플리커즈 (Plickers)",
         "url": "https://get.plickers.com",
         "category": "퀴즈/평가",
@@ -702,7 +693,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 79,
+        "id": 78,
         "name": "큐리오플래닛",
         "url": "https://www.curioplanet.com",
         "category": "기타",
@@ -711,7 +702,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 80,
+        "id": 79,
         "name": "투터로그 (TutorLog)",
         "url": "https://tutorlog.io",
         "category": "학급관리",
@@ -720,7 +711,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 81,
+        "id": 80,
         "name": "캡컷 (CapCut)",
         "url": "https://www.capcut.com",
         "category": "창작",
@@ -729,7 +720,7 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 82,
+        "id": 81,
         "name": "MS 팀즈 (Microsoft Teams)",
         "url": "https://www.microsoft.com/teams",
         "category": "협업/소통",
@@ -738,7 +729,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 83,
+        "id": 82,
         "name": "Google Workspace",
         "url": "https://workspace.google.com",
         "category": "협업/소통",
@@ -747,7 +738,7 @@ export const tools = [
         "difficulty": "Mid"
     },
     {
-        "id": 84,
+        "id": 83,
         "name": "Pinterest",
         "url": "https://www.pinterest.com",
         "category": "메모/관리",
@@ -756,21 +747,12 @@ export const tools = [
         "difficulty": "Low"
     },
     {
-        "id": 85,
+        "id": 84,
         "name": "YouTube",
         "url": "https://www.youtube.com",
         "category": "창작/소통",
         "description": "전 세계의 다양한 교육 영상 자료를 활용할 수 있는 플랫폼",
         "pricing": "Freemium",
         "difficulty": "Low"
-    },
-    {
-        "id": 86,
-        "name": "Antigravity",
-        "url": "#",
-        "category": "기타",
-        "description": "당신의 코딩을 도와주는 강력한 AI 에이전트",
-        "pricing": "Free",
-        "difficulty": "High"
     }
 ];
